@@ -1,7 +1,7 @@
 pipeline {
     agent any
 	environment {
-		registry = 'tushardashpute/springboohello:latest'
+		registry = 'HarshavGanesuni/springboohello:latest'
 		registryCredentials = 'docker_credentials'
 		dockerImage = ''
 	}
@@ -12,7 +12,7 @@ pipeline {
                 	branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, 
                 	extensions: [], 
                 	submoduleCfg: [], 
-                	userRemoteConfigs: [[url: 'https://github.com/tushardashpute/springboohello-CICD.git']]])
+                	userRemoteConfigs: [[url: 'https://github.com/HarshavGanesuni/springboohello-CICD-main.git']]])
             }
         }
         stage ('Build Artifact') {

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: tushardashpute/springboohello:latest
+        image: HarshavGanesuni/springboohello:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 33333
