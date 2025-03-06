@@ -1,0 +1,57 @@
+# Ignore compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore Maven & Gradle directories
+target/
+build/
+out/
+.gradle/
+.mvn/
+!**/src/main/**/target/  # Allow target in src/main
+
+# Ignore log files
+*.log
+logs/
+nohup.out
+
+# Ignore IDE files (IntelliJ, Eclipse, VS Code)
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
+*.iml
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment & security files
+.env
+*.pem
+*.crt
+*.key
+*.p12
+secrets/
+config/
+application.properties
+application.yml
+
+# Ignore Docker files
+.dockerignore
+docker-compose.override.yml
+
+# Ignore Kubernetes files
+k8s/*.yaml
+
+# Ignore node_modules (if frontend present)
+node_modules/
+npm-debug.log
+
+# Ignore CI/CD files
+*.swp
+jenkins/
+terraform.tfstate
